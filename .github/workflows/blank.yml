@@ -26,9 +26,4 @@ jobs:
       - name: Start containers
         run: docker compose -f Docker/docker-compose.yaml up -d
 
-      # Runs a set of commands using the runners shell
-      - name: Check the containers
-        run: docker ps 
         
-      - name: Stop containers
-        run: docker compose -f Docker/docker-compose.yaml down
