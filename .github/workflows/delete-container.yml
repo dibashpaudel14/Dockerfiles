@@ -10,8 +10,8 @@ jobs:
     steps:
       - uses: actions/checkout@v5
 
-      - name: Delete
-        run: docker container rm -f wordpress_2 mysql_2
+      - name: Remove containers
+        run: docker-compose -f Docker/docker-compose.yaml down
 
 
 
