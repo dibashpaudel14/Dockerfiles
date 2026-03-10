@@ -1,0 +1,17 @@
+name: Delete docker containers
+
+on:
+  workflow-dispatch:
+
+jobs:
+  deleting:
+    runs-on: self-hosted
+
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Delete
+        run: docker container rm -f wordpress_2 mysql_2
+
+
+
