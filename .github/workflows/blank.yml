@@ -24,6 +24,6 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Start containers
-        run: docker compose -f Docker/docker-compose.yaml up -d
+        run: docker-compose -f Docker/docker-compose.yaml up -d
 
         
