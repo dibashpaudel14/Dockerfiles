@@ -1,7 +1,7 @@
-name: Delete docker containers
+name: Delete Docker Containers
 
 on:
-  workflow-dispatch:
+  workflow_dispatch:
 
 jobs:
   deleting:
